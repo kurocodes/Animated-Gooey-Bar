@@ -36,9 +36,9 @@ export default function Icon({
         >
           {/* SVG SHAPE */}
           <svg
-            width="200"
+            width="240"
             height="60"
-            viewBox="0 0 200 60"
+            viewBox="0 0 240 60"
             className="overflow-hidden"
           >
             <defs>
@@ -55,15 +55,11 @@ export default function Icon({
                     1 0 0 0 0
                     0 1 0 0 0
                     0 0 1 0 0
-                    0 0 0 20 -10
+                    0 0 0 40 -10
                   "
                   result="goo"
                 />
-                <feComposite
-                  in="SourceGraphic"
-                  in2="goo"
-                  operator="atop"
-                />
+                <feComposite in="SourceGraphic" in2="goo" operator="atop" />
               </filter>
             </defs>
 
@@ -72,19 +68,27 @@ export default function Icon({
               <rect
                 x="20"
                 y="18"
-                width="160"
-                height="36"
-                rx="12"
+                width="200"
+                height="24"
+                rx="50"
                 fill="black"
               />
 
               {/* Top droplet */}
               <rect
-                x="0"
-                y="0"
-                width="200"
-                height="30"
-                rx="15"
+                x="25"
+                y="-4"
+                width="240"
+                height="20"
+                rx="50"
+                fill="black"
+              />
+              <rect
+                x="-25"
+                y="-4"
+                width="240"
+                height="20"
+                rx="50"
                 fill="black"
               />
             </g>
